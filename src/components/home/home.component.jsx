@@ -1,4 +1,4 @@
-import { useContext,useEffect } from "react";
+import { useContext, useEffect } from "react";
 import { Link, Outlet, useNavigate } from "react-router-dom";
 import ProductsContext from "../../context/products";
 import "./home.component.css";
@@ -18,7 +18,6 @@ export default function Home(data) {
       setCart(cartItems);
     }
   }, [cart]);
-  
 
   return (
     <>
@@ -124,24 +123,26 @@ export default function Home(data) {
           </div>
         </Slider>
       </div>
-
-      {/* products */}
-
       {productList &&
         productList.map((product) => {
           return (
             <div className="product-grid">
-              <div
-                className="electronics-section-products"
-                
-              >
-                <p className="electronics-image-section" onClick={() => {
-                  navigate(`/product/${product.id}`);
-                }}>
-                  <img src={product.image} alt={product.title} title={product.title}/>
+              <div className="electronics-section-products">
+                <p
+                  className="electronics-image-section"
+                  onClick={() => {
+                    navigate(`/product/${product.id}`);
+                  }}
+                >
+                  <img
+                    src={product.image}
+                    alt={product.title}
+                    title={product.title}
+                    key={product.id}
+                  />
                 </p>
                 <p className="electronics-text-section" key={product.id}>
-                  {product.title.substring(0,12)}...
+                  {product.title.substring(0, 12)}...
                 </p>
                 <p>
                   <span
@@ -154,21 +155,34 @@ export default function Home(data) {
                       alt="star"
                     />
                   </span>
-                  <span className="electronics-text-section-rating-reviewers">
+                  <span
+                    className="electronics-text-section-rating-reviewers"
+                    key={product.rating.count}
+                  >
                     {" "}
                     ({product.rating.count})
                   </span>
                 </p>
                 <div>
                   <p>
-                    <span className="electronics-text-section-sp">
+                    <span
+                      className="electronics-text-section-sp"
+                      key={product.id}
+                    >
                       ₹ {product.price}
                     </span>
                   </p>
                 </div>
-                <div className="view"><button className="view-btn" onClick={() => {
-                  navigate(`/product/${product.id}`);
-                }}>View</button></div>
+                <div className="view">
+                  <button
+                    className="view-btn"
+                    onClick={() => {
+                      navigate(`/product/${product.id}`);
+                    }}
+                  >
+                    View
+                  </button>
+                </div>
               </div>
             </div>
           );
