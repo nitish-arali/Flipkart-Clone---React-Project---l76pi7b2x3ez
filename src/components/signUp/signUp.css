@@ -1,0 +1,77 @@
+.signup-container {
+    display: flex;
+    align-content: center;
+    margin-top: 1%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 80vh;
+    width: 60%;
+    background-color: #fff;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+  }
+  .signup-first-section {
+    width: 40%;
+    height: 100%;
+    background-color: #2874f0;
+    background-image: url(https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/login_img_c4a81e.png);
+    background-position: center 85%;
+    background-repeat: no-repeat;
+    color: #fff;
+    padding: 40px 33px;
+    font-size: 15px;
+  }
+  .signup-head {
+    font-size: 28px;
+    font-weight: 500;
+  }
+  .signup-sub-section {
+    display: block;
+    font-size: 18px;
+    margin-top: 16px;
+    line-height: 150%;
+    color: #dbdbdb;
+  }
+  .signup-form {
+    margin-top: 5rem;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 15px;
+  }
+  .signup-form input {
+    height: 40px;
+    width: 300px;
+    margin-bottom: 20px;
+    padding-left: 10px;
+  }
+  .signup-form-button {
+    background-color: #fb641b;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+    border: none;
+    color: #fff;
+    width: 100%;
+    height: 48px;
+    font-size: 18px;
+    border-radius: 2px;
+    font-weight: 500;
+    vertical-align: super;
+    cursor: pointer;
+    outline: none;
+    letter-spacing: 0.5px;
+    margin: auto;
+  }
+  .signup-form-button:hover {
+    font-size: 19px;
+  }
+  .signup-form-signup {
+    display: flex;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  .signup-form-signup:hover {
+    color: #2874f0;
+  }
+  .signup-wrapper-container {
+    background-color: #f1f3f6;
+    height: 100vh;
+  }
+  
