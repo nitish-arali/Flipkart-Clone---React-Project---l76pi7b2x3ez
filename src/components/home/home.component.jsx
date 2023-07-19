@@ -6,18 +6,23 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import CartContext from "../../context/cart.context";
+import Footer from "../Footer/Footer";
 
 export default function Home(data) {
   const navigate = useNavigate();
   const { productList } = useContext(ProductsContext);
   const { cart, setCart } = useContext(CartContext);
 
-  useEffect(() => {
-    if (localStorage.getItem("cart") && !cart.length) {
-      const cartItems = JSON.parse(localStorage.getItem("cart"));
-      setCart(cartItems);
-    }
-  }, [cart]);
+  useEffect(()=>{
+       
+  })
+
+  // useEffect(() => {
+  //   if (localStorage.getItem("cart") && !cart.length) {
+  //     const cartItems = JSON.parse(localStorage.getItem("cart"));
+  //     setCart(cartItems);
+  //   }
+  // }, [cart]);
 
   return (
     <>
@@ -187,6 +192,7 @@ export default function Home(data) {
             </div>
           );
         })}
+        <Footer />
     </>
   );
 }

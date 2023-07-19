@@ -68,6 +68,7 @@ export default function Cart() {
   if (isLoading) {
     return <p>Loading...</p>;
   }
+  
   return !authState ? (
     navigate("/login")
   ) : cart.length ? (

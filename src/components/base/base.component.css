@@ -67,10 +67,11 @@
     padding: 8px 10px;
     width: 550px;
     margin-left: -10px;
-    height: 350px;
+    height: auto;
     box-shadow: -5px 5px 7px rgba(0,0,0,0.2),
     5px 5px 10px rgba(0,0,0,0.2);
     border-top: 1px solid #ccc;
+    overflow-y: hidden;
 }
 .recent-search-list{
     display: flex;
@@ -97,4 +98,11 @@
     color:#2874f0;
     font-weight: 700;
     border-radius: 50%;
+}
+.base-search-items{
+    padding: 15px;
+    cursor: pointer;
+}
+.base-search-items:hover{
+    background-color: #ccc;
 }
