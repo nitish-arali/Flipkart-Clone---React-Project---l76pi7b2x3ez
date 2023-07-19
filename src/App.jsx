@@ -1,10 +1,9 @@
 import React, { useEffect } from "react";
-import {createBrowserRouter,RouterProvider} from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import BaseComponent from "./components/base/base.component";
 import Cart from "./components/cart/cart.component";
 import Home from "./components/home/home.component";
 import Login from "./components/login/login.component";
-import Payment from "./components/Payment/payment";
 import ErrorPage from "./components/ErrorPage/errorPage";
 import Products from "./components/home/products/products.component";
 import SignUp from "./components/signUp/signUp";
@@ -27,12 +26,6 @@ const router = createBrowserRouter([
       {
         path: "cart",
         element: <Cart />,
-        children: [
-          {
-            path: "payment",
-            element: <Payment />,
-          },
-        ],
       },
     ],
   },
@@ -59,26 +52,6 @@ const App = () => {
       setAuthState(JSON.parse(isLoggedIn));
     }
   }, [authState]);
-
-  // const navigate = useNavigate();
-  // useEffect(() => {
-  //   const path1 = window.location.pathname;
-  //   if (path1 === "/" && authState) {
-  //     navigate("/home");
-  //   } else if (path1 === "/" && !authState) {
-  //     navigate("/login");
-  //   }
-  // });
-
-  // const location = useLocation();
-  // const history = useHistory();
-  // useEffect(() => {
-  //   if (window.location.pathname === "/" && authState) {
-  //     history.push("/home");
-  //   } else if (window.location.pathname === "/" && !authState) {
-  //     history.push("/login");
-  //   }
-  // });
 
   return (
     <>

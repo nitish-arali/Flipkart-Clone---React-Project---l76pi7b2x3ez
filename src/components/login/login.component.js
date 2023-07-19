@@ -41,7 +41,7 @@ export default function Login() {
                 const password = data.get("password");
                 signInWithEmailAndPassword(auth, userName, password)
                   .then((userdetails) => {
-                    localStorage.setItem("isLoggedIn", JSON.stringify(auth));
+                    localStorage.setItem("isLoggedIn", "true");
                     console.log("User Logged In");
                     setAuthState(auth);
                   })

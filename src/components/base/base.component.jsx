@@ -20,11 +20,11 @@ export default function BaseComponent({}) {
       .then((data) => setProductList(data));
   }, []);
 
-  useEffect(() => {
-    if (localStorage.clear()) {
-      setCart([]);
-    }
-  }, []);
+  // useEffect(() => {
+  //   if (localStorage.clear()) {
+  //     setCart([]);
+  //   }
+  // }, []);
 
   useEffect(()=>{
     const path = window.location.pathname;
