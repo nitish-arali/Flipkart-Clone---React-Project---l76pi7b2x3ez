@@ -11,15 +11,9 @@ export default function Cart() {
   const { cart, setCart } = useContext(CartContext);
   const [isLoading, setIsLoading] = useState(true);
   const [authState, setAuthState] = useContext(AuthContext);
+  
   const navigate = useNavigate();
-  const notify = () => {
-    localStorage.clear();
-    cart.length = 0;
-    toast("Your Order has been confirmed. Thank you for Shopping!!!");
-    setTimeout(() => {
-      setCart([]);
-    }, 3000);
-  };
+
   useEffect(() => {
     const savedCart = JSON.parse(localStorage.getItem("cart")) || [];
     setCart(savedCart);
@@ -167,7 +161,9 @@ export default function Cart() {
                 >
                   Clear Cart
                 </button>
-                <button className="cart-checkout-button" onClick={notify}>
+                <button className="cart-checkout-button" onClick={()=>{
+                  navigate(`/payment`);
+                }}>
                   PLACE ORDER
                 </button>
               </div>

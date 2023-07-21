@@ -1,0 +1,158 @@
+.payment-main-container{
+    display: flex;
+    justify-content: center;
+    background-color: #f0f0f0;
+    height: 92vh;
+}
+.payment-wrapper{
+    margin-top: 5%;
+    width: 60%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    border-radius: 10px;
+}
+.payment-h1{
+    color: #2874f0;
+    align-self: center;
+}
+.payment-container{
+    width: 65%;
+    padding: 3% 8%;
+}
+
+form {
+    width: 100%;
+
+    >* {
+        margin-top: 20px;
+    }
+
+    input {
+        width: 100%;
+        min-height: 25px;
+        border: 0;
+        font-size: 1rem;
+        letter-spacing: .15rem;
+        font-family: "Arimo";
+        margin-top: 5px;
+        color: orange;
+        border-radius: 4px;
+    }
+
+    label {
+        text-transform: uppercase;
+        font-size: 12px;
+        letter-spacing: 2px;
+        color: orange;
+    }
+    .payment-h1 {
+        font-size: 24px;
+        line-height: 10px;
+        color: #2874f0;
+        letter-spacing: 1px;
+    }
+
+    .payment-h1:nth-of-type(2) {
+        margin-top: 10%;
+    }
+}
+.payment-name {
+    justify-content: space-between;
+    display: flex;
+    width: 100%;
+
+    div {
+        width: 45%;
+    }
+}
+.payment-address-info {
+    display: flex;
+    justify-content: space-between;
+
+    div {
+        width: 30%;
+    }
+}
+.payment-cc-info {
+    display: flex;
+    justify-content: space-between;
+
+    div {
+        width: 45%;
+    }
+}
+input:focus,
+button:focus {
+    outline: none;
+}
+
+.payment-btns{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10%;
+}
+
+.payment-btns button:hover{
+    cursor: pointer;
+    font-size:16px ;
+}
+
+
+.payment-btns button{
+    padding: 12px 24px;
+    background-color: #fb641b;    
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,.2);
+    border: none;
+    color: #fff;
+    font-size: 15px;
+    border-radius: 2px;
+}
+
+@media (max-width: 736px) {
+    .payment-wrapper {
+        width: 100%;
+    }
+
+    .payment-container {
+        width: 100%;
+    }
+
+    .payment-btns {
+        align-items: center;
+
+        button {
+            width: 50%;
+        }
+    }
+
+    form payment-h1 {
+        text-align: center;
+    }
+
+    .name,
+    .address-info,
+    .cc-info {
+        flex-direction: column;
+        width: 100%;
+        justify-content: space-between;
+
+        div {
+            align-items: center;
+            flex-direction: column;
+            width: 100%;
+            display: flex;
+        }
+    }
+
+    .payment-street,
+    .payment-cc-num {
+        text-align: center;
+    }
+
+     input {
+        margin: 5px 0;
+        min-height: 30px;
+    }
+}

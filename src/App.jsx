@@ -9,6 +9,7 @@ import Products from "./components/home/products/products.component";
 import SignUp from "./components/signUp/signUp";
 import { useState } from "react";
 import AuthContext from "./context/auth";
+import Payment from "./components/PaymentsPage/Payment";
 
 const router = createBrowserRouter([
   {
@@ -23,11 +24,15 @@ const router = createBrowserRouter([
         path: "product/:id",
         element: <Products />,
       },
-      {
+      { 
         path: "cart",
         element: <Cart />,
       },
-    ],
+      {
+        path: "payment",
+        element: <Payment />,
+      },
+    ]
   },
   {
     path: "login",

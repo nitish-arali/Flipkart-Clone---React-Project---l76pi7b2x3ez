@@ -13,9 +13,6 @@ export default function Home(data) {
   const { productList } = useContext(ProductsContext);
   const { cart, setCart } = useContext(CartContext);
 
-  useEffect(()=>{
-       
-  })
 
   // useEffect(() => {
   //   if (localStorage.getItem("cart") && !cart.length) {
