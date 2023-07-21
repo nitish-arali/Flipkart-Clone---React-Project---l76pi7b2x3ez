@@ -13,14 +13,6 @@ export default function Home(data) {
   const { productList } = useContext(ProductsContext);
   const { cart, setCart } = useContext(CartContext);
 
-
-  // useEffect(() => {
-  //   if (localStorage.getItem("cart") && !cart.length) {
-  //     const cartItems = JSON.parse(localStorage.getItem("cart"));
-  //     setCart(cartItems);
-  //   }
-  // }, [cart]);
-
   return (
     <>
       <div className="topProductNavBar">
@@ -76,49 +68,42 @@ export default function Home(data) {
         >
           <div>
             <img
-              src="https://rukminim1.flixcart.com/fk-p-flap/2000/280/image/e1ccefe674a248d6.jpg"
+              src="https://rukminim2.flixcart.com/fk-p-flap/1600/800/image/3959ad9f670aeeeb.jpg"
               alt="1"
               className="slider-img"
             />
           </div>
           <div>
             <img
-              src="https://rukminim1.flixcart.com/fk-p-flap/2000/280/image/6363749479abe09a.jpg"
+              src="https://rukminim2.flixcart.com/fk-p-flap/1600/800/image/ca2843e62171405e.jpg"
               alt="2"
               className="slider-img"
             />
           </div>
           <div>
             <img
-              src="https://rukminim1.flixcart.com/fk-p-flap/2000/280/image/09a4d20b8c2f5d10.jpg"
+              src="https://rukminim2.flixcart.com/fk-p-flap/1600/800/image/dd9d5debff8268af.png"
               alt="3"
               className="slider-img"
             />
           </div>
           <div>
             <img
-              src="https://rukminim1.flixcart.com/fk-p-flap/2000/280/image/9d322aa54c6b310a.jpg"
+              src="https://rukminim2.flixcart.com/fk-p-flap/1600/700/image/e85deb31304ab149.png"
               alt="4"
               className="slider-img"
             />
           </div>
           <div>
             <img
-              src="https://rukminim1.flixcart.com/flap/2000/280/image/75a15c3e19c3f7de.jpg"
+              src="https://rukminim2.flixcart.com/fk-p-flap/1688/280/image/6aa3ec7b2d7a55d6.png"
               alt="5"
               className="slider-img"
             />
           </div>
           <div>
             <img
-              src="https://rukminim1.flixcart.com/fk-p-flap/2000/280/image/62d1db714bbec85e.jpg"
-              alt="6"
-              className="slider-img"
-            />
-          </div>
-          <div>
-            <img
-              src="https://rukminim1.flixcart.com/fk-p-flap/2000/280/image/369b433f2969b79c.jpg"
+              src="https://rukminim2.flixcart.com/fk-p-flap/1600/800/image/f774da9141197c3c.jpg"
               alt="7"
               className="slider-img"
             />

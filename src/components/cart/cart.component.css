@@ -147,3 +147,18 @@
   outline: none;
 
 }
+/* @media only screen and (max-width:1550px) {
+  .cart-main-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+  }
+  .cart-buttons{
+    display:flex ;
+    flex-direction: column;
+    gap: 10px;
+    width: 40%;
+  }
+} */

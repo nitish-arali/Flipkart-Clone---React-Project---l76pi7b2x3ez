@@ -133,8 +133,9 @@ export default function BaseComponent({}) {
                 </button>
               )}
             </div>
-            <Link className="navLink">Become a Seller</Link>
             <Link className="navLink">
+              <p>Become a Seller</p></Link>
+            <Link className="navLink" id="base-more-dropdown">
               More
               <svg
                 fill="#ffffff"
@@ -152,6 +153,12 @@ export default function BaseComponent({}) {
 	s7.794-1.581,10.606-4.394l149.996-150C331.465,94.749,331.465,85.251,325.607,79.393z"
                 />
               </svg>
+              <div className="base-dropdown-container">
+                <p>Notification Preference</p><hr className="base-more-line"/>
+                <p>24x7 Customer Care</p><hr className="base-more-line"/>
+                <p>Advertise</p><hr className="base-more-line"/>
+                <p>Download App</p>
+              </div>
             </Link>
             <Link className="navLink" to={"./cart"}>
               <span className="cart-svg">
